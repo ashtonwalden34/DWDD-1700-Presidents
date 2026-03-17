@@ -4,3 +4,62 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f2f2b;
+    margin: 0;
+}
+
+header {
+    background-color: #2e4a45;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#cards figure {
+    margin: 0 2%;
+    padding: 0;
+    flex-basis: 96%;
+    background-color: #f4f4f4;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 320px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+
+#cards figure:hover {
+    transform: scale(1.03);
+}
+
+#cards p {
+    background-color: #3a6b63;
+    color: white;
+    margin: 0;
+    padding: 0.75rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#cards img {
+    width: 100%;
+    display: block;
+}
+
+#cards figcaption {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.4;
+}
